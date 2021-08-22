@@ -6,6 +6,20 @@
 
 需要自行在`.github/workflows/main.yml`添加定时任务
 
+## 服务器运行
+
+安装脚本所需依赖
+```
+pip3 install request
+```
+修改脚本代码13-16行参数
+```
+OpenLuckDraw = True if os.getenv("LUCK_DRAW") == 'true' else False  # 是否开启自动幸运抽奖(首次免费, 第二次5积分/次) 不建议开启 否则会导致多次执行时消耗积分
+PUSHPLUS_TOKEN = os.environ['PUSHPLUS_TOKEN']  # PushPlus Token
+Cookie = os.environ['COOKIE']  # 抓包Cookie
+Referer = os.environ['REFERER']  # 抓包referer
+```
+
 ## Secret
 
 **`Settings`->`Secrets`->`New repository secret`，添加以下Secret：**
