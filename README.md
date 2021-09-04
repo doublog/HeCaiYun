@@ -4,7 +4,7 @@
 
 搬运自[xuthus5/HeCaiYun](https://github.com/xuthus5/HeCaiYun)，改为github action版本
 
-需要自行在`.github/workflows/main.yml`添加定时任务
+需要自行在`.github/workflows/run.yml`添加定时任务(不建议Actions运行，有可能会导致封号）
 
 ## 服务器运行
 
